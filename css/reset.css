@@ -1,0 +1,33 @@
+/* reset.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  /* Espaços para header fixo e navbar mobile fixo */
+  padding-top: 80px; /* Para header fixo */
+  padding-bottom: 80px; /* Para navbar mobile fixo */
+}
+a {
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* No desktop, ajusta os paddings */
+@media (min-width: 768px) {
+  body {
+    padding-top: 100px; /* Header pode ser maior no desktop */
+    padding-bottom: 0; /* Remove padding do navbar mobile */
+  }
+}

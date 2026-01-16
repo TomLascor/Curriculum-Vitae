@@ -1,0 +1,17 @@
+.icon-contact {
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  position: relative;
+}
+
+.icon-contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("icons/mail.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

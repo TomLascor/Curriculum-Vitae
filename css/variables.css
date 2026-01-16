@@ -1,0 +1,25 @@
+
+/* variables.css */
+:root {
+  --bg-dark: #000023;
+  --bg-light: #0b102e;
+  --blue: #5673F4;
+  --blue-light: #3F60F3;
+  --red: #9D2131;
+  --text-main: #F1F1F1;
+  --text-muted: #b7b7c9;
+  --nav-bg: #0e1538;
+  
+  /* Breakpoints */
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+}

@@ -1,0 +1,133 @@
+/* header.css */
+
+/* ============================================
+   HEADER FIXO NO TOPO
+   ============================================ */
+
+/* Header fixo */
+header {
+  position: fixed; /* Fixa no topo */
+  top: 0; /* Cola no topo */
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--bg-dark);
+  z-index: 999; /* Um pouco abaixo do mobile-nav se necessário */
+  backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+}
+
+/* Container do header */
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Logo - Nome sempre visível */
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-main);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+  transition: font-size 0.3s ease;
+}
+
+/* ============================================
+   NAVBAR DESKTOP (escondido no mobile)
+   ============================================ */
+.desktop-nav {
+  display: none;
+}
+
+.main-nav a {
+  position: relative;
+  padding: 8px 16px 8px 36px;
+  margin: 0 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--text-main);
+}
+
+.main-nav a.btn-accent {
+  padding-left: 36px;
+}
+
+/* Base do ícone */
+.main-nav a::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+/* Ícones específicos */
+.icon-about::before {
+  /* background-image: url("../icons/user.svg"); */
+  filter: invert(1) brightness(0.8);
+}
+
+.icon-skills::before {
+  /* background-image: url("../icons/code.svg"); */
+  filter: invert(1) brightness(0.8);
+}
+
+.icon-experience::before {
+  /* background-image: url("../icons/briefcase.svg"); */
+  filter: invert(1) brightness(0.8);
+}
+
+.icon-languages::before {
+  /* background-image: url("../icons/globe.svg"); */
+  filter: invert(1) brightness(0.8);
+}
+
+.icon-contact::before {
+  /* background-image: url("../icons/mail.svg"); */
+  filter: invert(1) brightness(0.8);
+}
+
+/* ============================================
+   RESPONSIVIDADE DESKTOP
+   ============================================ */
+@media (min-width: 768px) {
+  /* Header desktop layout */
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+  
+  /* Mostra nav desktop */
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-nav a {
+    font-size: 15px;
+    margin: 0 12px;
+    padding: 8px 20px 8px 40px;
+  }
+}

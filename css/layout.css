@@ -1,0 +1,60 @@
+/* layout.css */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+section {
+  padding: var(--space-xl) 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+/* Hero section */
+.hero {
+  padding: 80px 0 60px;
+  text-align: center;
+  background: radial-gradient(circle at top, #0e1440, var(--bg-dark));
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: var(--space-sm);
+}
+
+.hero p {
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto var(--space-lg);
+  font-size: 16px;
+}
+
+/* Footer principal */
+footer:not(.mobile-nav) {
+  padding: var(--space-lg) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 70px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  font-size: 28px;
+}
+
+h3 {
+  margin-bottom: var(--space-sm);
+}
