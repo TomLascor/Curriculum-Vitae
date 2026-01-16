@@ -27,7 +27,7 @@ img {
 /* No desktop, ajusta os paddings */
 @media (min-width: 768px) {
   body {
-    padding-top: 100px; /* Header pode ser maior no desktop */
+    padding-top: 75px;/* Header pode ser maior no desktop */
     padding-bottom: 0; /* Remove padding do navbar mobile */
   }
 }
